@@ -26,8 +26,15 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
   </head>
   <body>
+    <header id="header"></header>
+    <script>
+      load("#header", "./template/header.html");
+    </script>
     <h1>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
       mollitia quod error distinctio minima, quam iure blanditiis, repellat
@@ -36,5 +43,10 @@
       cupiditate qui saepe sunt voluptas suscipit, autem consequuntur eligendi
       quas in beatae vitae provident!
     </h1>
+
+    <footer id="footer"></footer>
+    <script>
+      load("#footer", "./template/footer.html");
+    </script>
   </body>
 </html>
