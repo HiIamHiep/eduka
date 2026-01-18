@@ -1464,4 +1464,16 @@ textarea {
   bottom: 0;
 }
 
+.partners {
+  margin-top: 72px;
+}
+.partners__list {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.partners__item {
+  padding: 0 74px;
+}
+
 /*# sourceMappingURL=main.css.map */
