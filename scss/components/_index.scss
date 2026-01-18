@@ -1,2 +1,5 @@
 // Component = một khối UI độc lập
 // có thể tái sử dụng, có trách nhiệm rõ ràng
+@use "./logo";
+@use "./buttons";
+@use "./hero";

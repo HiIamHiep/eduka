@@ -1,3 +1,47 @@
-<div class="header__inner">
-  <h2>Header content</h2>
-</div>
+<header class="header" id="header">
+  <div class="container">
+    <div class="top-bar">
+      <!-- Logo -->
+      <a href="/" class="logo top-bar__logo">
+        <img
+          src="./assets/icons/logo.svg"
+          class="logo__img top-bar__logo-img"
+        />
+        <h1 class="logo__title top-bar__logo-title">Eduka.</h1>
+      </a>
+
+      <!-- Navigation list -->
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item navbar__item--active">
+            <a href="#!" class="navbar__link">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">Courses</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">Blog</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Top action -->
+      <div class="top-act">
+        <a href="./sign-in.html" class="btn btn--small top-act__sign-in"
+          >Sign In</a
+        >
+        <a
+          href="./sign-up.html"
+          class="btn btn--primary btn--small top-act__sign-up"
+          >Sign Up</a
+        >
+      </div>
+    </div>
+  </div>
+</header>

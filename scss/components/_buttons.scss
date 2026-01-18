@@ -1,0 +1,43 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+
+  height: 52px;
+  border-radius: 30px;
+  padding: 0 33px;
+  background: #fff;
+
+  color: #010101;
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  user-select: none;
+
+  &--small {
+    height: 40px;
+  }
+
+  & + .btn:not(.btn--no-margin) {
+    margin-left: 20px;
+  }
+
+  &--primary {
+    color: #fff;
+    background: #0166ff;
+  }
+
+  &--outline {
+    border: 1px solid #0166ff;
+  }
+
+  &--rounded {
+    border-radius: 50%;
+    background: transparent;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

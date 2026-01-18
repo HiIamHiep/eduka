@@ -1,0 +1,46 @@
+@use "../abstracts";
+
+%flexItemCenter {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  background: #fff;
+}
+
+.top-bar {
+  @extend %flexItemCenter;
+  padding: 20px 0;
+}
+
+.navbar {
+  margin-left: 155px;
+  &__list {
+    @extend %flexItemCenter;
+  }
+
+  &__item {
+    &--active > .navbar__link {
+      color: #000;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
+
+  &__link {
+    @extend %flexItemCenter;
+
+    height: 50px;
+    padding: 0 22px;
+
+    color: #9c9d9d;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+}
+
+.top-act {
+  margin-left: auto;
+  @extend %flexItemCenter;
+}
