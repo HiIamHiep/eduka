@@ -1,0 +1,27 @@
+.courses {
+  margin-top: 79px;
+  padding: 50px 0;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__laber {
+    color: #0166ff;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  &__title {
+    color: #010101;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  &__list {
+    margin-top: 50px;
+  }
+}
