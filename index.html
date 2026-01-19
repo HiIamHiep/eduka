@@ -36,243 +36,343 @@
       load("#header", "./template/header.html");
     </script>
 
-    <main class="container home">
+    <main class="home">
       <!-- Hero -->
-      <section class="hero">
-        <div class="row">
-          <div class="col-7">
-            <div class="hero__content">
-              <div class="hero__badge">
-                <span class="hero__badge-value">50% OFF</span>
-                <span class="hero__badge-text">Learn From Today </span>
+      <div class="container">
+        <section class="hero">
+          <div class="row">
+            <div class="col-7">
+              <div class="hero__content">
+                <div class="hero__badge">
+                  <span class="hero__badge-value">50% OFF</span>
+                  <span class="hero__badge-text">Learn From Today </span>
+                </div>
+                <h1 class="hero__heading">
+                  Best <span class="hero__highlight">Learning </span>Platform
+                  For Everyone
+                </h1>
+                <p class="hero__desc">
+                  Send your email marketing campaign quickly and easily. Trusted
+                  by developers, designers and marketers for time-savings,
+                  scalability and price.
+                </p>
+                <div class="hero__actions">
+                  <a href="#!" class="btn btn--primary hero__cta"
+                    >Explore Courses
+                    <img
+                      src="./assets/icons/arrow-right.svg"
+                      alt="arrow-right"
+                    />
+                  </a>
+                  <button class="btn hero__play btn--outline btn--rounded">
+                    <img src="./assets/icons/play.svg" alt="" />
+                  </button>
+                </div>
               </div>
-
-              <h1 class="hero__heading">
-                Best <span class="hero__highlight">Learning </span>Platform For
-                Everyone
-              </h1>
-
-              <p class="hero__desc">
-                Send your email marketing campaign quickly and easily. Trusted
-                by developers, designers and marketers for time-savings,
-                scalability and price.
-              </p>
-
-              <div class="hero__actions">
-                <a href="#!" class="btn btn--primary hero__cta"
-                  >Explore Courses
-                  <img src="./assets/icons/arrow-right.svg" alt="arrow-right" />
-                </a>
-                <button class="btn hero__play btn--outline btn--rounded">
-                  <img src="./assets/icons/play.svg" alt="" />
-                </button>
+            </div>
+            <div class="col-5">
+              <div class="hero__media">
+                <div class="hero__decor">
+                  <span class="hero__decor-circle hero__decor-circle--1"></span>
+                  <span class="hero__decor-circle hero__decor-circle--2"></span>
+                  <span class="hero__decor-circle hero__decor-circle--3"></span>
+                  <span class="hero__decor-circle hero__decor-circle--4"></span>
+                </div>
+                <img
+                  src="./assets/img/smiling-cute-teen-girl-using-laptop-white-wall.png"
+                  alt=""
+                  class="hero__image"
+                />
               </div>
             </div>
           </div>
-          <div class="col-5">
-            <div class="hero__media">
-              <div class="hero__decor">
-                <span class="hero__decor-circle hero__decor-circle--1"></span>
-                <span class="hero__decor-circle hero__decor-circle--2"></span>
-                <span class="hero__decor-circle hero__decor-circle--3"></span>
-                <span class="hero__decor-circle hero__decor-circle--4"></span>
-              </div>
-
-              <img
-                src="./assets/img/smiling-cute-teen-girl-using-laptop-white-wall.png"
-                alt=""
-                class="hero__image"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <!-- Partners -->
-      <section class="partners">
-        <ul class="partners__list">
-          <li class="partners__item">
-            <img
-              src="./assets/icons/google.svg"
-              alt=""
-              class="partners__logo partners__logo--google"
-            />
-          </li>
-
-          <li class="partners__item">
-            <img
-              src="./assets/icons/slack.svg"
-              alt=""
-              class="partners__logo partners__logo--slack"
-            />
-          </li>
-          <li class="partners__item">
-            <img
-              src="./assets/icons/amazon.svg"
-              alt=""
-              class="partners__logo partners__logo--amazon"
-            />
-          </li>
-          <li class="partners__item">
-            <img
-              src="./assets/icons/hubspot.svg"
-              alt=""
-              class="partners__logo partners__logo--hubspot"
-            />
-          </li>
-          <li class="partners__item">
-            <img
-              src="./assets/icons/gusto.svg"
-              alt=""
-              class="partners__logo partners__logo--gusto"
-            />
-          </li>
-        </ul>
-      </section>
+      <div class="container">
+        <section class="partners">
+          <ul class="partners__list">
+            <li class="partners__item">
+              <img
+                src="./assets/icons/google.svg"
+                alt=""
+                class="partners__logo partners__logo--google"
+              />
+            </li>
+            <li class="partners__item">
+              <img
+                src="./assets/icons/slack.svg"
+                alt=""
+                class="partners__logo partners__logo--slack"
+              />
+            </li>
+            <li class="partners__item">
+              <img
+                src="./assets/icons/amazon.svg"
+                alt=""
+                class="partners__logo partners__logo--amazon"
+              />
+            </li>
+            <li class="partners__item">
+              <img
+                src="./assets/icons/hubspot.svg"
+                alt=""
+                class="partners__logo partners__logo--hubspot"
+              />
+            </li>
+            <li class="partners__item">
+              <img
+                src="./assets/icons/gusto.svg"
+                alt=""
+                class="partners__logo partners__logo--gusto"
+              />
+            </li>
+          </ul>
+        </section>
+      </div>
 
       <!-- Courses -->
-      <section class="courses">
-        <div class="courses__header">
-          <span class="courses__laber">Our Courses</span>
-          <h2 class="courses__title">Browse Our Best Courses</h2>
-        </div>
-
-        <div class="courses__list">
-          <div class="row">
-            <!-- Course card 1 -->
-            <div class="col-3">
-              <article class="course-card">
-                <div class="course-card__thumb">
-                  <img
-                    src="./assets/img/course_1.jpg"
-                    alt=""
-                    class="course-card__image"
-                  />
-                </div>
-                <div class="course-card__body">
-                  <h3 class="course-card__title">
-                    Teach Your Kids Math In The Simple Way
-                  </h3>
-                </div>
-                <div class="course-card__meta">
-                  <span class="course-card__lessons">
-                    <span class="course-card__icon">
-                      <img src="./assets/icons/education.svg" alt="" />
-                    </span>
-                    42 Lessons
-                  </span>
-                  <div class="course-card__rating">
-                    <img src="./assets/icons/stars.svg" alt="" />
-                    <img src="./assets/icons/stars.svg" alt="" />
-                    <img src="./assets/icons/stars.svg" alt="" />
-                    <img src="./assets/icons/stars.svg" alt="" />
-                    <img src="./assets/icons/stars.svg" alt="" />
+      <div class="container">
+        <section class="courses">
+          <div class="courses__header">
+            <span class="courses__laber">Our Courses</span>
+            <h2 class="courses__title">Browse Our Best Courses</h2>
+          </div>
+          <div class="courses__list">
+            <div class="row">
+              <!-- Course card 1 -->
+              <div class="col-3">
+                <article class="course-card">
+                  <div class="course-card__thumb">
+                    <img
+                      src="./assets/img/course_1.jpg"
+                      alt=""
+                      class="course-card__image"
+                    />
                   </div>
-                </div>
-              </article>
-            </div>
-
-            <!-- Course card 2 -->
-            <div class="col-3">
-              <article class="course-card">
-                <div class="course-card__thumb">
-                  <img
-                    src="./assets/img/course_2.jpg"
-                    alt=""
-                    class="course-card__image"
-                  />
-                </div>
-                <div class="course-card__body">
-                  <h3 class="course-card__title">
-                    Teach Your Kids Math In The Simple Way
-                  </h3>
-                </div>
-                <div class="course-card__meta">
-                  <span class="course-card__lessons">
-                    <span class="course-card__icon">
-                      <img src="./assets/icons/education.svg" alt="" />
-                    </span>
-                    22 Lessons
-                  </span>
-                  <div class="course-card__rating">
-                    <img src="./assets/icons/stars.svg" alt="" />
-                    <img src="./assets/icons/stars.svg" alt="" />
-                    <img src="./assets/icons/stars.svg" alt="" />
-                    <img src="./assets/icons/stars.svg" alt="" />
-                    <img src="./assets/icons/stars.svg" alt="" />
+                  <div class="course-card__body">
+                    <h3 class="course-card__title">
+                      Teach Your Kids Math In The Simple Way
+                    </h3>
                   </div>
-                </div>
-              </article>
-            </div>
-
-            <!-- Course card 3 -->
-            <div class="col-3">
-              <article class="course-card">
-                <div class="course-card__thumb">
-                  <img
-                    src="./assets/img/course_3.jpg"
-                    alt=""
-                    class="course-card__image"
-                  />
-                </div>
-                <div class="course-card__body">
-                  <h3 class="course-card__title">
-                    Teach Your Kids Math In The Simple Way
-                  </h3>
-                </div>
-                <div class="course-card__meta">
-                  <span class="course-card__lessons">
-                    <span class="course-card__icon">
-                      <img src="./assets/icons/education.svg" alt="" />
+                  <div class="course-card__meta">
+                    <span class="course-card__lessons">
+                      <span class="course-card__icon">
+                        <img src="./assets/icons/education.svg" alt="" />
+                      </span>
+                      42 Lessons
                     </span>
-                    24 Lessons
-                  </span>
-                  <div class="course-card__rating">
-                    <img src="./assets/icons/stars.svg" alt="" />
-                    <img src="./assets/icons/stars.svg" alt="" />
-                    <img src="./assets/icons/stars.svg" alt="" />
-                    <img src="./assets/icons/stars.svg" alt="" />
-                    <img src="./assets/icons/stars.svg" alt="" />
+                    <div class="course-card__rating">
+                      <img src="./assets/icons/stars.svg" alt="" />
+                      <img src="./assets/icons/stars.svg" alt="" />
+                      <img src="./assets/icons/stars.svg" alt="" />
+                      <img src="./assets/icons/stars.svg" alt="" />
+                      <img src="./assets/icons/stars.svg" alt="" />
+                    </div>
                   </div>
-                </div>
-              </article>
-            </div>
-
-            <!-- Course card 4 -->
-            <div class="col-3">
-              <article class="course-card">
-                <div class="course-card__thumb">
-                  <img
-                    src="./assets/img/course_4.jpg"
-                    alt=""
-                    class="course-card__image"
-                  />
-                </div>
-                <div class="course-card__body">
-                  <h3 class="course-card__title">
-                    Teach Your Kids Math In The Simple Way
-                  </h3>
-                </div>
-                <div class="course-card__meta">
-                  <span class="course-card__lessons">
-                    <span class="course-card__icon">
-                      <img src="./assets/icons/education.svg" alt="" />
+                </article>
+              </div>
+              <!-- Course card 2 -->
+              <div class="col-3">
+                <article class="course-card">
+                  <div class="course-card__thumb">
+                    <img
+                      src="./assets/img/course_2.jpg"
+                      alt=""
+                      class="course-card__image"
+                    />
+                  </div>
+                  <div class="course-card__body">
+                    <h3 class="course-card__title">
+                      Teach Your Kids Math In The Simple Way
+                    </h3>
+                  </div>
+                  <div class="course-card__meta">
+                    <span class="course-card__lessons">
+                      <span class="course-card__icon">
+                        <img src="./assets/icons/education.svg" alt="" />
+                      </span>
+                      22 Lessons
                     </span>
-                    15 Lessons
-                  </span>
-                  <div class="course-card__rating">
-                    <img src="./assets/icons/stars.svg" alt="" />
-                    <img src="./assets/icons/stars.svg" alt="" />
-                    <img src="./assets/icons/stars.svg" alt="" />
-                    <img src="./assets/icons/stars.svg" alt="" />
-                    <img src="./assets/icons/stars.svg" alt="" />
+                    <div class="course-card__rating">
+                      <img src="./assets/icons/stars.svg" alt="" />
+                      <img src="./assets/icons/stars.svg" alt="" />
+                      <img src="./assets/icons/stars.svg" alt="" />
+                      <img src="./assets/icons/stars.svg" alt="" />
+                      <img src="./assets/icons/stars.svg" alt="" />
+                    </div>
                   </div>
-                </div>
-              </article>
+                </article>
+              </div>
+              <!-- Course card 3 -->
+              <div class="col-3">
+                <article class="course-card">
+                  <div class="course-card__thumb">
+                    <img
+                      src="./assets/img/course_3.jpg"
+                      alt=""
+                      class="course-card__image"
+                    />
+                  </div>
+                  <div class="course-card__body">
+                    <h3 class="course-card__title">
+                      Teach Your Kids Math In The Simple Way
+                    </h3>
+                  </div>
+                  <div class="course-card__meta">
+                    <span class="course-card__lessons">
+                      <span class="course-card__icon">
+                        <img src="./assets/icons/education.svg" alt="" />
+                      </span>
+                      24 Lessons
+                    </span>
+                    <div class="course-card__rating">
+                      <img src="./assets/icons/stars.svg" alt="" />
+                      <img src="./assets/icons/stars.svg" alt="" />
+                      <img src="./assets/icons/stars.svg" alt="" />
+                      <img src="./assets/icons/stars.svg" alt="" />
+                      <img src="./assets/icons/stars.svg" alt="" />
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <!-- Course card 4 -->
+              <div class="col-3">
+                <article class="course-card">
+                  <div class="course-card__thumb">
+                    <img
+                      src="./assets/img/course_4.jpg"
+                      alt=""
+                      class="course-card__image"
+                    />
+                  </div>
+                  <div class="course-card__body">
+                    <h3 class="course-card__title">
+                      Teach Your Kids Math In The Simple Way
+                    </h3>
+                  </div>
+                  <div class="course-card__meta">
+                    <span class="course-card__lessons">
+                      <span class="course-card__icon">
+                        <img src="./assets/icons/education.svg" alt="" />
+                      </span>
+                      15 Lessons
+                    </span>
+                    <div class="course-card__rating">
+                      <img src="./assets/icons/stars.svg" alt="" />
+                      <img src="./assets/icons/stars.svg" alt="" />
+                      <img src="./assets/icons/stars.svg" alt="" />
+                      <img src="./assets/icons/stars.svg" alt="" />
+                      <img src="./assets/icons/stars.svg" alt="" />
+                    </div>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+
+          <div class="courses__actions">
+            <button class="btn btn--primary courses__load">
+              Load More
+              <img src="./assets/icons/arrow-right.svg" alt="" />
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <!-- Why choose us -->
+      <div class="container-fluid gx-0">
+        <section class="why-choose">
+          <div class="why-choose__header">
+            <span class="why-choose__label">Why Choose Us</span>
+            <h2 class="why-choose__heading">
+              A Choice That Makes The Differece
+            </h2>
+          </div>
+          <div class="container">
+            <div class="why-choose__features">
+              <div class="row">
+                <div class="col-3">
+                  <!-- Why choose 1 -->
+                  <article class="why-choose__feature">
+                    <div class="why-choose__icon" style="--icon-bg: #3d81c2">
+                      <img src="./assets/icons/teaching.svg" alt="" />
+                    </div>
+                    <h3 class="why-choose__title">One-by one Teaching</h3>
+                    <p class="why-choose__desc">
+                      All of our special education experts have a degree in
+                      special education
+                    </p>
+                  </article>
+                </div>
+                <div class="col-3">
+                  <!-- Why choose 2 -->
+                  <article class="why-choose__feature">
+                    <div class="why-choose__icon" style="--icon-bg: #a6cf4a">
+                      <img src="./assets/icons/availability.svg" alt="" />
+                    </div>
+                    <h3 class="why-choose__title">24/7 Tutor Availablity</h3>
+                    <p class="why-choose__desc">
+                      All of our special education experts have a degree in
+                      special education
+                    </p>
+                  </article>
+                </div>
+                <div class="col-3">
+                  <!-- Why choose 3 -->
+                  <article class="why-choose__feature">
+                    <div class="why-choose__icon" style="--icon-bg: #ff60a8">
+                      <img src="./assets/icons/whitebook.svg" alt="" />
+                    </div>
+                    <h3 class="why-choose__title">Interactive Whitebook</h3>
+                    <p class="why-choose__desc">
+                      All of our special education experts have a degree in
+                      special education
+                    </p>
+                  </article>
+                </div>
+                <div class="col-3">
+                  <!-- Why choose 4 -->
+                  <article class="why-choose__feature">
+                    <div class="why-choose__icon" style="--icon-bg: #fb6238">
+                      <img src="./assets/icons/price.svg" alt="" />
+                    </div>
+                    <h3 class="why-choose__title">Affordable Prices</h3>
+                    <p class="why-choose__desc">
+                      All of our special education experts have a degree in
+                      special education
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Blogs -->
+      <!-- <div class="container">
+        <section class="blog">
+          <div class="blog__header">
+            <span class="blog__label">Latest News</span>
+            <h2 class="blog__heading">A Choice That Makes The Differece</h2>
+          </div>
+
+          <div class="blog__filters">
+            <button class="btn btn--primary btn--small blog__filter">
+              All
+            </button>
+            <button class="btn btn--small blog__filter">Art</button>
+            <button class="btn btn--small blog__filter">Business</button>
+            <button class="btn btn--small blog__filter">Career</button>
+          </div>
+
+          <div class="blog__list">
+            <article class="blog-card"></article>
+          </div>
+        </section>
+      </div> -->
     </main>
 
     <footer id="footer"></footer>
