@@ -1,5 +1,133 @@
 .blog {
-  &__filters {
+  padding: 40px 0;
+
+  &__header {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__label {
+    color: #0166ff;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  &__heading {
+    color: #010101;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 135%;
+  }
+
+  &__filters {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__filter {
+    color: #325aff;
+    background: rgba(50, 90, 255, 0.06);
+
+    &--active {
+      color: #fff;
+
+      background: #325aff;
+    }
+  }
+
+  &__list {
+    margin-top: 40px;
+  }
+
+  &-card {
+    &__img-wrap {
+      position: relative;
+      padding: 33%;
+
+      border-radius: 14px;
+    }
+
+    &__thumb {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 14px;
+    }
+
+    &__body {
+      margin-top: 11px;
+    }
+
+    &__meta {
+      display: flex;
+    }
+
+    &__category {
+      color: #a6cf4a;
+      margin-right: 11px;
+    }
+
+    &__date {
+      color: #707070;
+    }
+
+    &__category,
+    &__date {
+      font-size: 1.3rem;
+      font-weight: 500;
+      line-height: 153.846%;
+    }
+
+    &__title {
+      margin-top: 6px;
+      width: 75%;
+
+      color: #000;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 166.667%;
+    }
+
+    &__author {
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+
+      &-avatar {
+        width: 30px;
+        height: 30px;
+        background: lightgray 50% / cover no-repeat;
+        border-radius: 100%;
+      }
+
+      &-name {
+        color: #000;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+      }
+
+      &-role {
+        color: #707070;
+        font-size: 1.4rem;
+        line-height: 185.714%;
+      }
+    }
+
+    &__author > *:not(:first-child) {
+      margin-left: 14px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-self: center;
+    margin-top: 60px;
   }
 }
