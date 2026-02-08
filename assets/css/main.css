@@ -1380,6 +1380,9 @@ textarea {
   opacity: 0.8;
 }
 
+.hero {
+  --decor-circle-width: 100%;
+}
 .hero__badge {
   margin-top: 100px;
   display: flex;
@@ -1403,6 +1406,7 @@ textarea {
 }
 .hero__heading {
   margin-top: 29px;
+  max-width: 489px;
   color: #010101;
   font-size: 7rem;
   font-weight: 700;
@@ -1440,7 +1444,6 @@ textarea {
   position: relative;
   width: 100%;
   padding-top: 125%;
-  overflow: hidden;
   z-index: 0;
 }
 .hero__media::before {
@@ -1455,8 +1458,44 @@ textarea {
 }
 .hero__decor {
   position: absolute;
-  top: 0;
+  bottom: 50%;
   left: 0;
+  transform: translate(-15%, 50%);
+  width: 604px;
+  height: 603px;
+}
+.hero__decor-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  border-radius: 50%;
+  background: linear-gradient(142deg, rgba(255, 255, 255, 0.58) 1.8%, rgba(255, 255, 255, 0.66) 99.75%);
+  backdrop-filter: blur(65.0278320313px);
+}
+.hero__decor-circle--1 {
+  width: var(--decor-circle-width, 100%);
+  height: var(--decor-circle-width, 100%);
+}
+.hero__decor-circle--2 {
+  width: var(--decor-circle-width, 100%);
+  height: var(--decor-circle-width, 100%);
+}
+.hero__decor-circle--3 {
+  width: var(--decor-circle-width, 100%);
+  height: var(--decor-circle-width, 100%);
+}
+.hero__decor-circle--4 {
+  width: var(--decor-circle-width, 100%);
+  height: var(--decor-circle-width, 100%);
+}
+.hero__decor-ball {
+  position: absolute;
+  left: 15px;
+  bottom: 80px;
+  width: 85px;
+  height: 89px;
 }
 .hero__image {
   position: absolute;
@@ -1842,6 +1881,65 @@ textarea {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 150%;
+}
+
+.stat-badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 5px;
+  width: 206px;
+  height: 58px;
+  border-radius: 29px;
+  background: #fff;
+  box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.04);
+  z-index: 1;
+}
+.stat-badge--small {
+  width: 126px;
+}
+.stat-badge__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.stat-badge__icon--green {
+  background: #a6cf4a;
+}
+.stat-badge__icon--pink {
+  background: #ff60a8;
+}
+.stat-badge__icon--small {
+  width: 42px;
+  height: 42px;
+}
+.stat-badge__content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.stat-badge__value, .stat-badge__label {
+  color: #676b7c;
+}
+.stat-badge__value {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.stat-badge__label {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.stat-badge--mentor {
+  top: 0;
+  left: -115px;
+}
+.stat-badge--course {
+  bottom: 20px;
+  right: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

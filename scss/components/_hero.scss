@@ -1,4 +1,6 @@
 .hero {
+  --decor-circle-width: 100%;
+
   &__content {
   }
 
@@ -30,6 +32,9 @@
 
   &__heading {
     margin-top: 29px;
+
+    max-width: 489px;
+
     color: #010101;
     font-size: 7rem;
     font-weight: 700;
@@ -79,7 +84,6 @@
     position: relative;
     width: 100%;
     padding-top: 125%;
-    overflow: hidden;
 
     &::before {
       content: "";
@@ -102,8 +106,59 @@
 
   &__decor {
     position: absolute;
-    top: 0;
+    bottom: 50%;
     left: 0;
+
+    transform: translate(-15%, 50%);
+
+    width: 604px;
+    height: 603px;
+
+    &-circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      display: inline-block;
+
+      border-radius: 50%;
+      background: linear-gradient(
+        142deg,
+        rgba(255, 255, 255, 0.58) 1.8%,
+        rgba(255, 255, 255, 0.66) 99.75%
+      );
+      backdrop-filter: blur(65.02783203125px);
+
+      &--1 {
+        width: var(--decor-circle-width, 100%);
+        height: var(--decor-circle-width, 100%);
+      }
+
+      &--2 {
+        width: var(--decor-circle-width, 100%);
+        height: var(--decor-circle-width, 100%);
+      }
+
+      &--3 {
+        width: var(--decor-circle-width, 100%);
+        height: var(--decor-circle-width, 100%);
+      }
+
+      &--4 {
+        width: var(--decor-circle-width, 100%);
+        height: var(--decor-circle-width, 100%);
+      }
+    }
+
+    &-ball {
+      position: absolute;
+      left: 15px;
+      bottom: 80px;
+
+      width: 85px;
+      height: 89px;
+    }
   }
 
   &__image {
