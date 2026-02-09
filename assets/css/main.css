@@ -1382,6 +1382,7 @@ textarea {
 
 .hero {
   --decor-circle-width: 100%;
+  margin-top: 100px;
 }
 .hero__badge {
   margin-top: 100px;
@@ -1939,7 +1940,105 @@ textarea {
 }
 .stat-badge--course {
   bottom: 20px;
-  right: 30px;
+  right: 15px;
+}
+
+.feedback {
+  padding: 60px 0;
+}
+.feedback__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.feedback__label {
+  color: #0166ff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.feedback__heading {
+  color: #010101;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 135%;
+}
+.feedback__list {
+  margin-top: 100px;
+}
+.feedback__avatar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 80%;
+}
+.feedback__img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 324px;
+  height: 100%;
+  background: #ffd05a;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.feedback__btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  fill: #fff;
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.1));
+}
+.feedback__btn--back, .feedback__btn--next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.feedback__btn--back {
+  left: 4%;
+}
+.feedback__btn--next {
+  right: 4%;
+}
+.feedback__content {
+  padding: 45px 0 35px 0;
+}
+.feedback__rating {
+  margin-top: 22px;
+}
+.feedback__text {
+  margin-top: 26px;
+  max-width: 506px;
+  color: #14131a;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 150%;
+}
+.feedback__info {
+  margin-top: 66px;
+  display: flex;
+  align-items: center;
+}
+.feedback__author {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.feedback__name {
+  color: #010101;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 120%;
+}
+.feedback__job {
+  color: #717171;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 150%;
+}
+.feedback__company {
+  margin-left: 208px;
 }
 
 /*# sourceMappingURL=main.css.map */
