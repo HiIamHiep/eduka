@@ -1,0 +1,140 @@
+.footer {
+  padding: 100px 0;
+
+  font-size: 1.4rem;
+
+  background: var(--footer-bg-color);
+
+  &__row {
+    display: grid;
+    grid-template-columns: 2fr 1.3fr 1fr 1fr 1.5fr;
+    gap: 60px;
+  }
+
+  &__desc {
+    margin-top: 30px;
+    line-height: 1.5;
+  }
+
+  &__help-text {
+    margin-top: 40px;
+  }
+
+  &__heading {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.8rem;
+  }
+
+  &__list {
+    margin-top: 18px;
+  }
+
+  &__link,
+  &__text {
+    padding: 8px 0;
+    line-height: 1.4;
+  }
+
+  &__link {
+    display: inline-block;
+
+    &:hover {
+      color: #0071dc;
+    }
+  }
+
+  &__text,
+  &__copyright {
+    color: var(--footer-text-color);
+  }
+
+  &__label {
+    font-weight: 500;
+    margin-top: 30px;
+  }
+
+  &__form {
+    display: flex;
+    gap: 10px;
+    padding: 16px 0;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #d2d1d6;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    &::placeholder {
+      font-weight: 400;
+    }
+  }
+
+  &__btn {
+    border-radius: 6px !important;
+  }
+
+  &__bottom {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 10px;
+    color: #fff;
+
+    transition: translate, filter;
+    transition-duration: 0.3s;
+
+    filter: grayscale(50%);
+
+    &--facebook {
+      background: #4863a9;
+    }
+
+    &--youtube {
+      background: #f00;
+    }
+
+    &--tiktok {
+      background: #000;
+    }
+
+    &--twitter {
+      background: #4999e6;
+    }
+
+    &--linkedin {
+      background: #2f71ab;
+    }
+
+    &:hover {
+      filter: grayscale(0);
+      translate: 0 -3px;
+    }
+  }
+
+  &__social-icon {
+    width: 14px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+      hue-rotate(210deg) brightness(104%) contrast(103%);
+  }
+}

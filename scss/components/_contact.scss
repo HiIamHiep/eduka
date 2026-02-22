@@ -1,0 +1,44 @@
+.contact {
+  background: #f8fbff;
+  padding: 74px 0;
+
+  &__label {
+    color: #0166ff;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  &__title {
+    margin-top: 20px;
+    color: #010101;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 135%;
+  }
+
+  &__desc {
+    margin-top: 24px;
+    width: 512px;
+
+    color: #898b94;
+    font-size: 1.6rem;
+    line-height: 150%;
+  }
+
+  &__action {
+    margin-top: 30px;
+  }
+
+  &__image {
+    position: relative;
+    padding-top: 100%;
+
+    > img {
+      position: absolute;
+      top: 0;
+
+      height: 100%;
+      transform: translateX(-48%);
+    }
+  }
+}

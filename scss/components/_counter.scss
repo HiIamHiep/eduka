@@ -1,0 +1,24 @@
+.counter {
+  margin-top: 150px;
+  padding: 0 137px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__number {
+    color: #88ae32;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 133.333%;
+  }
+
+  &__label {
+    color: #262b34;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 142.857%;
+  }
+}
